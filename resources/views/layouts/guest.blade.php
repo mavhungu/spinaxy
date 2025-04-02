@@ -6,6 +6,8 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>{{ config('app.name', 'Laravel') }}</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon(2).ico') }}">
+
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,7 +20,8 @@
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100 dark:bg-gray-900">
             <div>
                 <a href="/">
-                    <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+                    <!--x-application-logo class="w-20 h-20 fill-current text-gray-500" /-->
+                    <img src="{{ Vite::asset('resources/img/logo/logo.png') }}" alt="" class="w-auto h-20 fill-current text-gray-800 dark:text-gray-200" />
                 </a>
             </div>
 
