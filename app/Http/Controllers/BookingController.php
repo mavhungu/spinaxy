@@ -12,7 +12,8 @@ class BookingController extends Controller
      */
     public function index()
     {
-        //
+        $bookings = Booking::all();
+        return view('bookings.index', compact('bookings'));
     }
 
     /**
@@ -21,6 +22,7 @@ class BookingController extends Controller
     public function create()
     {
         //
+        return view('bookings.create');
     }
 
     /**
