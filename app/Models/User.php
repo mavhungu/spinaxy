@@ -46,8 +46,23 @@ class User extends Authenticatable
         ];
     }
 
-    public function business()
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
+
+    public function isBusiness()
+    {
+        return $this->role === 'business';
+    }
+
+    public function businesses()
     {
         return $this->hasMany(Business::class);
+    }
+
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
     }
 }
