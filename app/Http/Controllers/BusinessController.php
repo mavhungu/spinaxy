@@ -12,7 +12,8 @@ class BusinessController extends Controller
      */
     public function index()
     {
-        //
+        $businesses = Business::all();
+        return view('businesses.index', compact('businesses'));
     }
 
     /**
@@ -20,7 +21,7 @@ class BusinessController extends Controller
      */
     public function create()
     {
-        //
+        return view('businesses.create');
     }
 
     /**
@@ -29,6 +30,7 @@ class BusinessController extends Controller
     public function store(Request $request)
     {
         //
+        //return view('business.')
     }
 
     /**
