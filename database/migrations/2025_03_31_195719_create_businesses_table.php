@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('businesses', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->string('business_name');
             $table->string('email')->unique();
             $table->string('phone_number');
