@@ -52,8 +52,9 @@
             @endif
         </header>
         <div class="flex items-center justify-center w-full transition-opacity opacity-100 duration-750 lg:grow starting:opacity-0">
-            <main class="">
-                <p>Mavhungu Ronewa</p>
+            <main class="text-center">
+                <h1 class="text-3xl font-semibold text-gray-900 dark:text-gray-100">Welcome to Your App</h1>
+                <p class="text-gray-600 dark:text-gray-400 mt-2">Manage your business and bookings easily.</p>
             </main>
         </div>
 
